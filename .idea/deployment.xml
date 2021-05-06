@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" deleteMissingItems="true" createEmptyFolders="true" persistUploadOnCheckin="false" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;.gitignore;.eslintignore;.tfignore;.gitmodules;.gitattributes;.gitkeep;.github">
+    <serverData>
+      <paths name="IIS (ACC)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/iis-85.png" />
+            <excludedPath path="/iisstart.htm" />
+            <excludedPath path="ojs/public/journals" />
+            <excludedPath path="ojs/public/site" />
+            <excludedPath path="ojs/node_modules" />
+            <excludedPath path="ojs/cache" />
+            <excludedPath path="ojs/config.inc.php" />
+            <excludedPath path="ojs\lib\pkp\lib\vendor" />
+            <excludedPath path="ojs\lib\pkp\lib\components" />
+            <excludedPath path="ojs\plugins\generic\citationStyleLanguage\lib" />
+            <excludedPath path="ojs\plugins\paymethod\paypal\vendor" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="IIS (DEV)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/iis-85.png" />
+            <excludedPath path="/iisstart.htm" />
+            <excludedPath path="ojs/public/journals" />
+            <excludedPath path="ojs/public/site" />
+            <excludedPath path="ojs/node_modules" />
+            <excludedPath path="ojs/cache" />
+            <excludedPath path="ojs/config.inc.php" />
+            <excludedPath path="ojs\lib\pkp\lib\vendor" />
+            <excludedPath path="ojs\lib\pkp\lib\components" />
+            <excludedPath path="ojs\plugins\generic\citationStyleLanguage\lib" />
+            <excludedPath path="ojs\plugins\paymethod\paypal\vendor" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="IIS (LOCAL)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/iis-85.png" />
+            <excludedPath path="/iisstart.htm" />
+            <excludedPath path="public/journals" />
+            <excludedPath path="public/site" />
+            <excludedPath path="node_modules" />
+            <excludedPath path="cache" />
+            <excludedPath path="config.inc.php" />
+            <excludedPath path="lib\pkp\lib\vendor" />
+            <excludedPath path="lib\pkp\lib\components" />
+            <excludedPath path="plugins\generic\citationStyleLanguage\lib" />
+            <excludedPath path="plugins\paymethod\paypal\vendor" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="IIS (PROD)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/iis-85.png" />
+            <excludedPath path="/iisstart.htm" />
+            <excludedPath path="ojs/public/journals" />
+            <excludedPath path="ojs/public/site" />
+            <excludedPath path="ojs/node_modules" />
+            <excludedPath path="ojs/cache" />
+            <excludedPath path="ojs/config.inc.php" />
+            <excludedPath path="ojs\lib\pkp\lib\vendor" />
+            <excludedPath path="ojs\lib\pkp\lib\components" />
+            <excludedPath path="ojs\plugins\generic\citationStyleLanguage\lib" />
+            <excludedPath path="ojs\plugins\paymethod\paypal\vendor" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
