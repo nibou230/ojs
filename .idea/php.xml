@@ -4,7 +4,17 @@
     <servers>
       <server host="localhost" id="fccd1359-8faa-49fb-bd5d-4984d3189009" name="localhost" use_path_mappings="true">
         <path_mappings>
-          <mapping local-root="$PROJECT_DIR$/ojs" remote-root="C:/inetpub/wwwroot/ojs" />
+          <mapping local-root="$PROJECT_DIR$" remote-root="C:/inetpub/wwwroot/ojs" />
+        </path_mappings>
+      </server>
+      <server host="localhost" id="3b9cbda3-80d0-4849-b662-57098bf97ca5" name="localhost (https)" port="65443" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="C:/inetpub/wwwroot/ojs" />
+        </path_mappings>
+      </server>
+      <server host="bul-dv-ojs01.bibl.ulaval.ca" id="0cf01b9a-39c3-4190-88a1-4e9c18e87a0a" name="bul-dv-ojs01.bibl.ulaval.ca" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="D:/inetpub/wwwroot/ojs" />
         </path_mappings>
       </server>
     </servers>

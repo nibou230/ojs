@@ -3,13 +3,13 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="3b48937c-e4f8-4ac2-9397-974992af45f7" name="IIS (DEV)" url="http://bul-dv-ojs01.bibl.ulaval.ca:8080/ojs">
-        <fileTransfer mountedRoot="Z:\" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="Z:\ojs" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="38cbbc1d-a97e-417d-a635-002eec39c139" name="IIS (ACC)" url="http://bul-ts-ojs01.bibl.ulaval.ca:8080/ojs">
-        <fileTransfer mountedRoot="Y:\" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="Y:\ojs" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="fca134f2-ee68-48d4-a531-3d45e692ac85" name="IIS (PROD)" url="https://revues.ulaval.ca/ojs/">
-        <fileTransfer mountedRoot="X:\" accessType="MOUNT" port="0" />
+        <fileTransfer mountedRoot="X:\ojs" accessType="MOUNT" port="0" />
       </webServer>
       <webServer id="8f4d80c0-588a-4cc2-9665-788ed270c9f2" name="IIS (LOCAL)" url="https://localhost:65443/ojs">
         <fileTransfer mountedRoot="C:\inetpub\wwwroot\ojs" accessType="MOUNT" port="0" />
