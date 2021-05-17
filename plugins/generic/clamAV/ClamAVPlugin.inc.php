@@ -66,7 +66,7 @@ class ClamAVPlugin extends GenericPlugin {
 	 * Scans the file to verify if it's safe to upload it.
 	 * @param $hookName string
 	 * @param $args array
-	 * @return boolean true if the file is safe
+	 * @return boolean false if the file is safe
 	 */
 	function uploadFile($hookName, $args) {
 		$isFileManager = $hookName === "FileManager::uploadFile";
@@ -74,18 +74,18 @@ class ClamAVPlugin extends GenericPlugin {
 		$isFileUploadWizardHandler = $hookName === "FileUploadWizardHandler::uploadFile";
 
 		$fileName = null;
-		$isSafe = true;
 		$errors = null;
 		if ($isFileManager || $isFileUploadWizardHandler) {
-			$fileName =& $args[0];
-			$isSafe =& $args[1];
+			$fileName = $args[0];
+			$errors =& $args[1];
 		}
 		else if ($isSubmissionFile) {
 			$errors =& $args[0];
-			$method =& $args[1];
+			$method = $args[1];
 
 			if ($method === "edit") {
-				return $isSafe;
+				// The file has already been uploaded, it's not useful to scan it another time.
+				return false;
 			}
 		}
 
@@ -141,22 +141,19 @@ class ClamAVPlugin extends GenericPlugin {
 		}
 
 		if ($isSafe) {
-			return true;
+			// If the file is safe, make sure all other subsequent hooks will be called.
+			return false;
 		}
 
 		error_log($virusScanMsg);
-		if ($isFileManager) {
-			$request = Application::get()->getRequest();
-			$session =& $request->getSession();
 
-			$session->setSessionVar('hasVirus', true);
+		if (!$errors) {
+			$errors = new MessageBag();
 		}
-		else if ($isSubmissionFile) {
-			if (!$errors) {
-				$errors = new MessageBag();
-			}
-			$errors->add('clamAV', __('common.uploadFailed.virus'));
-		}
+		$errors->add('clamAV', __('common.uploadFailed.virus'));
+
+		// The file is not safe, don't even try to call other hooks, stop the processing now.
+		return true;
 	}
 }
 
