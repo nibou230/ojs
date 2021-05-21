@@ -136,6 +136,10 @@ class FileFormatFilterPlugin extends GenericPlugin {
 		$fileFilterDao = DAORegistry::getDAO('FileFilterDAO');
 		$fileFilter = $fileFilterDao->getByGenreId($genreId);
 
+		if (!$fileFilter) {
+			$fileFilter = new FileFilter();
+		}
+
 		$fileFilter->setMode($filterMode);
 		$fileFilter->setFilterValue($formats);
 		$fileFilter->setUserId($userId);
