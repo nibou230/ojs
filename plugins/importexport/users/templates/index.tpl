@@ -60,7 +60,7 @@
 						{fbvElement type="radio" name="importFormat" id="formatCSV" checked=$institutional|compare:"csv" label="plugins.importexport.users.importFormat.csv" value="csv"}
 					{/fbvFormSection}
 					{fbvFormSection title="plugins.importexport.users.confirmationEmail" list=true}
-						{fbvElement type="checkbox" name="sendConfirmationEmail" id="sendConfirmationEmail" checked=1 label="plugins.importexport.users.confirmationEmail.send" value=1}
+						{fbvElement type="checkbox" name="sendConfirmationEmail" id="sendConfirmationEmail" checked=0 label="plugins.importexport.users.confirmationEmail.send" value=1}
 					{/fbvFormSection}
 
 					{fbvFormButtons submitText="plugins.importexport.users.import.importUsers" hideCancel="true"}
